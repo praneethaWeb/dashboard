@@ -1,0 +1,34 @@
+row2{
+    background-color: #4A1570;
+}
+
+  #div2 {
+    height: 50%;
+    background-color:#4A1570;
+  }
+  #div1,#div2{
+    height:50px;
+    
+    }
+  #div2.col-xs-6
+  {
+    padding:0px !important;
+  }
+  .card{
+    background-color: #fff;
+}
+.card-footer{
+    
+    color:#000;
+}
+.composemail {
+    color: #FFD200;
+    padding: 10px 20px;
+    border-radius: 4px;
+  }
+  
+  #mybutton {
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+  }
