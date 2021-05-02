@@ -1,0 +1,88 @@
+<nav class="navbar navbar-expand-sm " style="background-color: #4A1570;">
+  <a class="navbar-brand" href="#">
+    <img src="http://localhost:4200/assets/logo.png" width="50" height="50" alt="">
+  </a>
+  <!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="../dash">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-white" routerLink="../repo">Repository</a>
+    </li>   
+  </ul>
+  <div class = "navbar-nav ml-auto">
+    <img src="https://themarketingcrowd.ie/wp-content/uploads/2017/01/Round-Profile-Pic.png"  style="width:40px;">
+  </div>
+</nav>
+<div  style="background-color: #4A1570;">
+  <div class="container" >
+   <h3 class="text-white">Top Engagement</h3>
+   
+  <div class="card-deck text-white">
+    <div class="card">
+      <img class="card-img" src="http://localhost:4200/assets/mix.jpg" alt="Card image cap">
+      <div class="card-img-overlay">
+        <h6 class="card-title text-center" >75%</h6>
+        <p class="card-text">Lead Engagement Ration</p>
+        </div>
+      <div class="card-footer">
+        <p class="card-text">BNI Bio Sheet</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="http://localhost:4200/assets/carrot.jpg" alt="Card image cap">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-center" >63%</h5>
+        <p class="card-text">Lead Engagement Ration</p>        
+      </div>
+      <div class="card-footer">
+        <p class="card-text">BNI Bio Sheet1</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="http://localhost:4200/assets/leaf.jpg" alt="Card image cap">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-center">79%</h5>
+        <p class="card-text"></p>
+        </div>
+      <div class="card-footer">
+        <p class="card-text">BNI Bio Sheet2</p>
+      </div>
+    </div>
+    <div class="card">
+      <img class="card-img" src="http://localhost:4200/assets/fruit.jpg" alt="Card image cap">
+      <div class="card-img-overlay">
+        <h5 class="card-title text-center">73%</h5>
+        <p class="card-text"></p>
+       </div>
+      <div class="card-footer">
+        <p class="card-text">BNI Bio Sheet3</p>
+      </div>
+    </div>
+  </div>
+<div class="container">
+    <p></p>    
+    <h2 class="text-white">Recent Activities</h2>       
+      <table class="table table-striped  text-white">
+        
+          <tr>
+            <td scope="col"><b>Name</b></td>
+            <td scope="col"><b>Activity</b></td>
+            <td scope="col"><b>Template</b></td>
+            <td scope="col"><b>Time</b></td>
+            <td scope="col"><b>Duration</b></td>
+          </tr>
+        
+        <tbody>
+        <tr *ngFor="let item of dashboarditems">
+          <td >{{item.name}}</td>
+          <td >{{item.activity}}</td>
+          <td >{{item.template}}</td>
+          <td >{{item.time}}</td>
+          <td >{{item.duration}}</td>
+         </tr>
+        </tbody>
+        </table>
+  </div>
+</div>
